@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+.coiso{
+  margin-top: 30px;
+}
+.navBar{
+  width: 100%;
+  height: 100px;
+  background-color: #407BFF;
+  display: flex;
+  justify-content: center; 
+  gap: 50px;
+  top: 0;
+}
+
+.logo{
+  width: 170px;
+  height: 100px;
+}
+
+.navBar button{
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #407BFF;
+  transition: 200ms ease;
+}
+
+.navBar button:hover{
+  font-size: 25px;
+}
+
+#loginBtn{
+    color: black;
+    background-color: white;
+    height: 70px;
+    width: 130px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 200ms ease;
+}
+
+#loginBtn:hover{
+  color: white;
+  background-color: #407BFF;
+  font-size: 25px;
+}
+
+.arrow-navBar{
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in-out;
+  rotate: 0deg;
+}
+
+.coiso:hover .arrow-navBar{
+  rotate: 90deg;
+  width: 25px;
+  height: 25px;
+}
