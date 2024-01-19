@@ -9,12 +9,12 @@ body{
   padding: 0;
   font-family: 'Inter';
 }
-.coiso{
+.btnDropDown{
   margin-top: 30px;
 }
 .navBar{
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #407BFF;
   display: flex;
   justify-content: center; 
@@ -23,13 +23,13 @@ body{
 }
 
 .logo{
-  width: 170px;
-  height: 100px;
+  width: 150px;
+  height: 80px;
 }
 
 .navBar button{
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -39,23 +39,23 @@ body{
 }
 
 .navBar button:hover{
-  font-size: 25px;
+  font-size: 19px;
 }
 
 #loginBtn{
     color: black;
     background-color: white;
-    height: 70px;
+    height: 45px;
     width: 130px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: 200ms ease;
 }
 
 #loginBtn:hover{
   color: white;
   background-color: #407BFF;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .arrow-navBar{
@@ -65,8 +65,68 @@ body{
   rotate: 0deg;
 }
 
-.coiso:hover .arrow-navBar{
+.btnDropDown:hover .arrow-navBar{
   rotate: 90deg;
   width: 25px;
   height: 25px;
+}
+
+.btnDropDown:hover .dropdown-content{
+  display: block;
+}
+
+ul{
+  list-style-type: none;
+  margin-top: 0;
+}
+.dropdown-content a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-left: 75vh;
+  transition: 200ms ease;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  left:0;
+  background-color: #407BFF;
+  height: 220px;
+  transition: 2s ease-in-out;
+}
+
+.dropdown-content a:hover{
+  font-size: 20px;
+}
+
+header{
+  width: 80%;
+  margin: auto auto;
+  height: 700px;
+  display: flex;
+}
+
+.textoHeader{
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.textoHeader button{
+  border: none;
+  background-color: #407BFF;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+  transition: 200ms ease-in-out;
+}
+
+.textoHeader button:hover{
+  background-color: #84a8fd;
+  font-size: 26px;
 }
