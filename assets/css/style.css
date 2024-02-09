@@ -20,11 +20,25 @@ body{
   justify-content: center; 
   gap: 50px;
   top: 0;
+  text-align: center;
 }
 
 .logo{
   width: 150px;
   height: 80px;
+  animation: animation-logo 300ms ease;
+  position: relative;
+}
+
+@keyframes animation-logo {
+  from{
+    top: -80px;
+  }
+
+  to{
+    top: 0;
+  }
+  
 }
 
 .navBar button{
@@ -36,6 +50,10 @@ body{
   justify-content: center;
   background-color: #407BFF;
   transition: 200ms ease;
+}
+
+.navBar button:active{
+  color: black !important;
 }
 
 .navBar button:hover{
@@ -58,6 +76,10 @@ body{
   font-size: 20px;
 }
 
+#loginBtn:active{
+  background-color: #d5d5d5;
+}
+
 .arrow-navBar{
   width: 20px;
   height: 20px;
@@ -66,13 +88,16 @@ body{
 }
 
 .btnDropDown:hover .arrow-navBar{
-  rotate: 90deg;
-  width: 25px;
-  height: 25px;
+    rotate: 90deg;
+    width: 25px;
+    height: 25px;
 }
 
 .btnDropDown:hover .dropdown-content{
   display: block;
+}
+.dropdown-content a:active{
+  color: black !important;
 }
 
 ul{
@@ -80,11 +105,12 @@ ul{
   margin-top: 0;
 }
 .dropdown-content a{
+  position: relative;
   text-decoration: none;
   color: white;
   display: block;
   margin-top: 20px;
-  margin-left: 75vh;
+  top: 40px;
   transition: 200ms ease;
 }
 .dropdown-content{
@@ -102,11 +128,17 @@ ul{
   font-size: 20px;
 }
 
+.dropdown-content a:hover p{
+  border-bottom: solid 1px white;
+
+}
+
 header{
   width: 80%;
   margin: auto auto;
   height: 700px;
   display: flex;
+  margin-top: 100px;
 }
 
 .textoHeader{
@@ -114,6 +146,9 @@ header{
   margin-top: 100px;
 }
 
+.imgHeader img{
+  max-width: 700px;
+}
 .textoHeader button{
   border: none;
   background-color: #407BFF;
@@ -123,10 +158,78 @@ header{
   width: 200px;
   height: 70px;
   border-radius: 5px;
+  cursor: pointer;
   transition: 200ms ease-in-out;
 }
 
 .textoHeader button:hover{
   background-color: #84a8fd;
-  font-size: 26px;
+  font-size: 30px;
+}
+
+.textoHeader button:active{
+  color: black;
+  background-color: #d5d5d5;
+}
+
+section{
+  margin-top: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  display: inline-block;
+  padding: 5%;
+  text-align: center;
+}
+
+section h1{
+  width: 100%;
+  font-size:70px;
+  margin: 0;
+  font-weight: bold;
+  color: #407BFF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicos{
+  display: flex;
+  width: 100%;
+}
+
+.card{
+  display: flex;
+  display: inline-block;
+  padding: 20px;
+  flex:30%;
+  margin: 1%;
+  border: dashed 2px black;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 600px;
+  padding: 100px;
+}
+
+.card img{
+  width:300px;
+}
+
+.card h2{
+  font-size: 50px;
+}
+
+#card1{
+  border: solid 2px #5AE4AB;
+  color: #409D78;
+}
+
+#card2{
+  border: solid 2px #F4B977;
+  color: #DE9761;
+}
+
+#card3{
+  border: solid 2px #7D97F4;
+  color: #4648EE;
 }
