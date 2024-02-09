@@ -128,10 +128,7 @@ ul{
   font-size: 20px;
 }
 
-.dropdown-content a:hover p{
-  border-bottom: solid 1px white;
 
-}
 
 header{
   width: 80%;
@@ -224,12 +221,112 @@ section h1{
   color: #409D78;
 }
 
+#card1:hover{
+  padding: 30px;
+  padding-top: 200px;
+  transition: 0.4s ease;
+}
+
+#card1:hover .cardText{
+  display: none;
+}
+
+#card1:hover #imagemDestinos{
+  display: none;
+}
+
+#card1:hover .cardTextHover{
+  display: block;
+}
+
 #card2{
   border: solid 2px #F4B977;
   color: #DE9761;
 }
 
+#card2:hover{
+  padding: 30px;
+  padding-top: 200px;
+  transition: 0.4s ease;
+}
+
+#card2:hover .cardText{
+  display: none;
+}
+
+#card2:hover #imagemCaixa{
+  display: none;
+}
+
+#card2:hover .cardTextHover{
+  display: block;
+}
+
 #card3{
   border: solid 2px #7D97F4;
   color: #4648EE;
+}
+
+#card3:hover{
+ padding: 30px;
+ padding-top: 200px;
+ transition: 0.4s ease;
+}
+
+#card3:hover .cardText{
+  display: none;
+}
+
+#card3:hover #imagemHotel{
+  display: none;
+}
+
+#card3:hover .cardTextHover{
+  display: block;
+}
+
+
+.cardTextHover{
+  text-align: justify;
+  font-size: 20px;
+  display: none;
+}
+
+.cardTextHover button{
+  width: 440px;
+  font-size: 25px;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: 200ms ease;
+}
+
+.cardTextHover button:active{
+  background-color: #d5d5d5 !important;
+  color: black;
+}
+
+#btnCard1{
+  background-color: #409D78;
+}
+
+#btnCard1:hover{
+  background-color: #5AE4AB;
+}
+
+#btnCard2{
+  background-color: #DE9761;
+}
+
+#btnCard2:hover{
+  background-color:#F4B977;
+}
+
+#btnCard3{
+  background-color: #4648EE;
+}
+
+#btnCard3:hover{
+  background-color: #7D97F4;
 }
